@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h5>
+      Q7 If marks are greater than or equal to 90 print "Grade A" Else if marks
+      are greater than or equal to 70 print "Grade B" Else if marks are greater
+      than or equal to 50 print "Grade C" Otherwise print:
+    </h5>
+
+    <h1 id="result"></h1>
+
+    <script>
+      let mark = Number(prompt(" enter your mark  "));
+
+      let result = document.getElementById("result");
+
+      if (isNaN(mark)) {
+        result.innerText = " invalid input";
+      } else if (mark >= 90) {
+        result.innerText = "Grade A";
+      } else if (mark >= 70) {
+        result.innerText = "Grade B";
+      } else if (mark >= 50) {
+        result.innerText = "Grade C";
+      } else {
+        result.innerText = "Fail";
+      }
+    </script>
+  </body>
+</html>

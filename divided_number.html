@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h5>
+      Question 4 You have to make a program that checks: Is the number divisible
+      by 5 or not?
+    </h5>
+
+    <h1 id="result"></h1>
+
+    <script>
+      let number = Number(prompt("Enter your Number"));
+      let result = document.getElementById("result");
+
+      if (number % 5 === 0) {
+        result.innerText = "Number is Divisible by 5";
+      } else {
+        result.innerText = " Number Not Divided by 5 ";
+      }
+    </script>
+  </body>
+</html>

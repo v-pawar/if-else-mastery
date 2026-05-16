@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Question 12 Make a program to check: Username and Password both are
+      correct or not
+    </h1>
+    <h1 id="result"></h1>
+
+    <script>
+      let result = document.getElementById("result");
+      let pass = prompt(" Enter Your Password ");
+      let username = prompt(" Enter Your User Name");
+
+      let password = "admin@123";
+
+      let user = "website developer";
+
+      if (pass === password && username === user) {
+        result.innerText = "Login Successful";
+      } else {
+        result.innerText = "Invalid Username or Password";
+      }
+    </script>
+  </body>
+</html>

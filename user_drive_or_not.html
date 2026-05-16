@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Make a program to check: User can drive vehicle or not</h3>
+    <h1 id="result"></h1>
+
+    <script>
+      let result = document.getElementById("result");
+      let age = Number(prompt(" Enter Your Age "));
+      let lic = prompt(" Enter you have A license Yes or  no  ");
+
+      let license = "yes";
+
+      if (age >= 18 && lic === "yes") {
+        result.innerText = "You Can Drive";
+      } else {
+        result.innerText = "You Cannot Drive";
+      }
+    </script>
+  </body>
+</html>

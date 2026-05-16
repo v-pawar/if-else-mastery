@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Q1 write a program to show user Voter or not voter</h1>
+    <h2 id="result"></h2>
+
+    <script>
+      let number = prompt("enter your age ");
+      let result = document.getElementById("result");
+
+      if (number >= 18) {
+        result.innerText = "your voter";
+      } else {
+        result.innerText = "your Not voter";
+      }
+    </script>
+  </body>
+</html>
