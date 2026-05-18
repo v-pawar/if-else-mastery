@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice set</title>
+  </head>
+  <body>
+    <h1>
+      Question 13 Make a program to check: Number is divisible by BOTH 3 and 5
+    </h1>
+
+    <h2 id="result"></h2>
+
+    <script>
+      let result = document.getElementById("result");
+
+      let num = Number(prompt("Enter Your Number"));
+      if (num % 3 == 0 && num % 5 == 0) {
+        result.innerText = " Divisible by 3 and 5";
+      } else {
+        result.innerText = " Not  Divisible by 3 and 5";
+      }
+    </script>
+  </body>
+</html>

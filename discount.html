@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice set</title>
+  </head>
+  <body>
+    <h2>
+      Question 13 Make a program to check: User is eligible for discount or not
+    </h2>
+
+    <h2 id="result"></h2>
+    <script>
+      let result = document.getElementById("result");
+      let amount = Number(prompt("Enter Your Amount"));
+      let member = prompt("Your Member Yes Or No");
+      if (amount >= 5000 && member === "yes") {
+        result.innerText = "Discount Applied";
+      } else {
+        result.innerText = " Not Discount Applied";
+      }
+    </script>
+  </body>
+</html>
