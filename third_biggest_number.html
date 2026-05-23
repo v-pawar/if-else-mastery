@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Make a program to check: Largest number among 3 numbers</h1>
+    <h3 id="result"></h3>
+
+    <script>
+      let num1 = Number(prompt("Enter your first  number "));
+      let num2 = Number(prompt("Enter your Second  number "));
+      let num3 = Number(prompt("Enter your Third  number "));
+      let result = document.getElementById("result");
+
+      if (num1 > num2 && num1 > num3) {
+        result.innerText = "first number is  grater";
+      } else if (num2 > num1 && num2 > num3) {
+        result.innerText = "second number is grater";
+      } else {
+        result.innerText = "Third number is grater ";
+      }
+    </script>
+  </body>
+</html>

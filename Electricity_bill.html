@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Make a program to check: Electricity bill discount</h1>
+    <h3 id="result"></h3>
+    <script>
+      let billresult = document.getElementById("result");
+      let amount = Number(prompt("Enter your Amount"));
+
+      let isSeniorCitizen = prompt("Enter Your SeniorCitizen  Yes OR No ");
+
+      if (amount >= 3000 && isSeniorCitizen === "yes") {
+        billresult.innerText = "20% Discount Applied";
+      } else if (amount >= 3000) {
+        billresult.innerHTML = "10% Discount Applied";
+      } else {
+        billresult.innerText = "No Discount Apply";
+      }
+    </script>
+  </body>
+</html>
